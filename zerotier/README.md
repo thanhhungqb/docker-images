@@ -3,6 +3,8 @@ This is docker image for zerotier.
 
 github: https://github.com/thanhhungqb/docker-images
 
+ZeroTier delivers the capabilities of VPNs, SDN, and SD-WAN with a single system, more information https://www.zerotier.com/
+
 # Build
 docker build -t thanhhungqb/zerotier .
 
