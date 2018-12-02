@@ -8,6 +8,9 @@ ZeroTier delivers the capabilities of VPNs, SDN, and SD-WAN with a single system
 # Build
 		docker build -t thanhhungqb/zerotier .
 
+For Raspbian version, please run with Dockerfile.rpi:
+
+		docker build -t thanhhungqb/zerotier:rpi -f Dockerfile.rpi .
 # Run
 
 Start:
