@@ -12,7 +12,7 @@ ZeroTier delivers the capabilities of VPNs, SDN, and SD-WAN with a single system
 
 Start:
 
-		docker run -d --name zerotier --rm --cap-add=NET_ADMIN --cap-add=SYS_ADMIN --device=/dev/net/tun thanhhungqb/zerotier
+		docker run -d --name zerotier --restart=always --net=host --cap-add=NET_ADMIN --cap-add=SYS_ADMIN --device=/dev/net/tun thanhhungqb/zerotier
 		
 Join a network with $NID (create one if you do not have)
 		
