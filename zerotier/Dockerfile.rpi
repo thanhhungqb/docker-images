@@ -1,0 +1,13 @@
+FROM resin/rpi-raspbian:stretch
+
+MAINTAINER thanhhungqb <thanhhungqb@gmail.com>
+
+RUN 	apt-get update && \
+	apt-get install -y curl && \
+	curl https://install.zerotier.com/ | bash ; \
+	echo 'done'
+	
+ENV	PATH	/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin
+
+CMD 	["/usr/sbin/zerotier-one"]
+
