@@ -25,6 +25,7 @@ With mount configure folder (persistent configure):
 		
 
 Alias for easy to use:
+
 		alias rclone='docker run -ti --rm --name rclone -v `echo $HOME/.config`/rclone:/root/.config/rclone thanhhungqb/rclone rclone'
 
 
