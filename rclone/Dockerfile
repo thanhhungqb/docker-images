@@ -9,5 +9,5 @@ RUN 	apt-get update && \
 	
 ENV	PATH	/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin
 
-CMD 	["/usr/sbin/zerotier-one"]
+CMD 	["rclone"]
 
