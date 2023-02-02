@@ -8,7 +8,7 @@
 # thanhhungqb/python-builder:ver
 # =====================================================================
 
-FROM python:3.8 as python-builder
+FROM python:3.8-slim-buster as python-builder
 
 LABEL author = "Hung Vo" 
 LABEL contact.gmail = "thanhhungqb@gmail.com"
@@ -60,7 +60,7 @@ RUN python3 -m pip install --upgrade pip && \
 # keep it simple and clean
 # =====================================================================
 
-FROM python:3.8 as runtime
+FROM python:3.8-slim-buster as runtime
 LABEL author = "Hung Vo" 
 LABEL contact.gmail = "thanhhungqb@gmail.com"
 
